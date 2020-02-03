@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Page</title>
+    <link rel="stylesheet" type = "text/css" href ="UploadCSS.css">
+    <script type= "text/javascript" src="UploadJS.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<script type = "text/javascript">
+    
+
+</script>
+
+<body>
+
+    <form id= "form" method = "post" action="http://localhost:8086/ICCTS/uploadImage" enctype ="multipart/form-data">
+        Title : <input id='title' name='title' type='text' maxlength='10'/><br>
+        Description : <input id='description' name='description' type='text' maxlength='50'/><br>
+        Price : <input id='price' name='price' type='int'/><br>
+        Image File : <input type='file' name='image' id='image' accept="image/*"><br>
+        <input type='button' value='Update' id='submit'name ='submit'>
+        
+        </form>
+
+    <div id="uploadlist"></div>
+
+    <script type= "text/javascript" src="UploadJS.js"></script>
+</body>
+
+</html>
